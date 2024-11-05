@@ -1,0 +1,326 @@
+@font-face {
+  font-family: 'Alimama';
+  src: url('../font/Alimama/AlimamaFangYuanTiVF-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'SmileySans';
+  src: url('../font/SmileySans/SmileySans-Oblique.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Alimama';
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+#audio{
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 80px;
+  cursor: pointer;
+  z-index: 1111;
+}
+.nav {
+  display: table;
+  background-color: hotpink;
+}
+
+
+
+.box {
+  width: 100%;
+  height: 100vh;
+  border: 4px solid #f8d493;
+  box-sizing: border-box;
+  background-color: #fdfdf5;
+  margin: 10px auto;
+  position: relative;
+}
+.box .line-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url('../images/IMG_3466.png') no-repeat;
+  background-size: 100% 100%;
+}
+.box .line-bg2 {
+  position: absolute;
+  width: 230px;
+  height: 400px;
+  right: 0;
+  bottom: 0;
+  background: url('../images/bg2.png') no-repeat;
+  background-size: 100% 100%;
+  z-index: 11112;
+}
+.box .bg2 {
+  position: absolute;
+  width: 230px;
+  height: 400px;
+  left: 0;
+  bottom: 0;
+  background: url('../images/bg2.png') no-repeat;
+  background-size: 100% 100%;
+  z-index: 11112;
+  transform: rotateY(180deg);
+}
+
+.box .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 111;
+  background-color: #fdfdf5;
+}
+.box .nav ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box .nav ul li {
+  padding: 5px;
+  font-size: 20px;
+  transition: .4s all;
+}
+.box .nav ul li a{
+  display: flex;
+  align-items: center;
+}
+.box .nav ul li img{
+  width: 20px;
+  margin-right: 5px;
+}
+.box .nav ul li:hover {
+  background-color: #f7a2c1;
+  font-size: 40px;
+}
+.box .nav ul .active {
+  background-color: #f7a2c1;
+  font-size: 40px;
+}
+.box .nav > p {
+  font-weight: bold;
+  margin-left: 4px;
+}
+.box .nav2 {
+  background: none;
+}
+.box .main {
+  width: 100%;
+  position: relative;
+  z-index: 2222;
+}
+.box .main .main-title {
+  font-family: '微软雅黑';
+  font-size: 100px;
+  color: #fff;
+  text-shadow: 9px 6px 2px #ff9723;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.box .main .content {
+  width: 94%;
+  margin: 0 auto;
+  height: 450px;
+  margin-bottom: 130px;
+  position: relative;
+}
+.box .main .content .title {
+  width: fit-content;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+  background-color: #eee;
+  background: url('../images/b2.png') no-repeat;
+  background-size: 100% 100%;
+  padding-left: 20px;
+  position: relative;
+  font-weight: bold;
+}
+.box .main .content .title::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #333;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+.box .main .content .t1 {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  padding: 0 20px;
+  font-size: 20px;
+  position: relative;
+  z-index: 111;
+}
+.box .main .content .t1 .img {
+  width: 160px;
+  height: 160px;
+  background-color: #eee;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px 0px #ffffaf6b, -1px -1px 20px #fbfb6d;
+  animation: img 10s linear infinite;
+}
+@keyframes img {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.box .main .content .t1 .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box .main .content .t1 .name {
+  width: fit-content;
+  margin: 10px 0;
+  padding: 5px 40px;
+  margin-left: 5px;
+  text-align: center;
+  background-color: #eee;
+  background: url('../images/b1.png') no-repeat;
+  background-size: 100% 100%;
+  font-weight: bold;
+  font-size: 30px;
+}
+.box .main .content .t1 ul {
+  text-align: left;
+  font-size: 18px;
+}
+.box .main .content .t1 ul li {
+  padding: 6px 0;
+  list-style-type: disc;
+}
+.box .main .content .t1 ul li span {
+  font-weight: bold;
+  font-family: '幼圆';
+}
+.box .main .content .t2 {
+  width: 55%;
+  position: absolute;
+  top: 30px;
+  right: 190px;
+  padding: 0 20px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.box .main .content .t2 p {
+  line-height: 1.5;
+}
+.box .main .content .t3 {
+  width: 48%;
+  position: absolute;
+  bottom: 61px;
+  right: 30px;
+  padding: 0 20px;
+  font-size: 16px;
+}
+.box .main .content .t3 p {
+  line-height: 1.5;
+}
+.box .directory .main-title {
+  padding-left: 20px;
+  background: none;
+  color: #ffc064;
+  font-size: 95px;
+}
+.box .directory .directory-content {
+  width: 94%;
+  margin: 20px auto;
+  background-color: #ffdca8;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+.box .directory .directory-content ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.box .directory .directory-content ul li {
+  width: 170px;
+  padding: 20px 25px;
+  background-color: #fff;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  transition: .4s all;
+}
+.box .directory .directory-content ul li:hover{
+  transform: scale(1.1);
+  box-shadow: 1px 1px 10px #525252;
+}
+.box .directory .directory-content ul li:nth-child(2n+1) {
+  background-color: #fefec9;
+}
+.box .directory .directory-content ul li:nth-child(2n+1)::before {
+  background-color: #fefec9;
+}
+.box .directory .directory-content ul li:last-child .btn {
+  background: url('../images/btn2.png') no-repeat;
+  background-size: 100% 100%;
+}
+.box .directory .directory-content ul li::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: -4%;
+  left: -5%;
+  z-index: -2;
+}
+.box .directory .directory-content ul li::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #333;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+}
+.box .directory .directory-content ul li h1 {
+  font-size: 100px;
+  color: #ffc856;
+  font-weight: bold;
+}
+.box .directory .directory-content ul li p {
+  display: block;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.box .directory .directory-content .btn {
+  width: 80%;
+  height: 40px;
+  margin-left: 30px;
+  background: url('../images/btn1.png') no-repeat;
+  background-size: 100% 100%;
+}

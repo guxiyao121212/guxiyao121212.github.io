@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/board.css">
+</head>
+<body>
+    <img id="audio" src="./images/音乐.png" alt="">
+    <audio src="./可爱小孩.MP3" autoplay loop></audio>
+     <div class="box">
+        <div class="nav nav2">
+            <p></p>
+            <ul>
+                <li><a href="./index.html"><img src="./images/首页.png" alt="">首页</a></li>
+                <li><a href="./contents.html"><img src="./images/目录.png" alt="">目录</a></li>
+                <li><a href="./font.html"><img src="./images/字体样式.png" alt="">字体设计</a></li>
+                <li><a href="./illustration.html"><img src="./images/标识.png" alt="">图形设计</a></li>
+                <li><a href="./design.html"><img src="./images/纹样设计.png" alt="">纹样设计</a></li>
+                <li><a href="./photo.html"><img src="./images/大包装.png" alt="">照片墙</a></li>
+                <li class="active"><a href="./board.html"><img src="./images/大包装.png" alt="">留言板</a></li>
+            </ul>
+        </div>
+        <div class="main board">
+            <div class="form">
+                <h1>如果您喜欢我的作品，请您联系我！</h1>
+                <div class="input-item">
+                    <span>用户：</span>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="radio-item">
+                    <span>性别：</span>
+                    <input type="radio" name="sex">男
+                    <input type="radio" name="sex" style="margin-left: 10px;">女
+                </div>
+                <div class="input-item">
+                    <span>密码：</span>
+                    <input type="password" placeholder="">
+                </div>
+                <div class="input-item">
+                    <span>确认密码：</span>
+                    <input type="password" placeholder="">
+                </div>
+                <div class="input-item">
+                    <span>邮箱：</span>
+                    <input type="email" placeholder="">
+                </div>
+                <div class="input-item">
+                    <span>手机号码：</span>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="select-item">
+                    <span>喝茶风格：</span>
+                    <select name="" id="">
+                        <option value="1">绿茶</option>
+                        <option value="2">红茶</option>
+                        <option value="3">乌龙茶</option>
+                        <option value="4">普洱茶</option>
+                    </select>
+                </div>
+                <div class="textarea-item">
+                    <span>个人介绍：</span>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="btn">提交</div>
+            </div>
+        </div>
+        <div class="bg5"></div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
